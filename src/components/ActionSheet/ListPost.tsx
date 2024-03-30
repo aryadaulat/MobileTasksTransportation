@@ -32,7 +32,7 @@ const ListPost: React.FC<SheetProps<'ListPost-sheet'>> = props => {
             <Text style={styles.textPhone}>{item.phone_number}</Text>
           </View>
           <View style={styles.boxCP}>
-            <MaterialCommunityIcons name="phone" color={'blue'} size={14} />
+            <MaterialCommunityIcons name="phone" color={'blue'} size={18} />
             <Text style={styles.textCP}>Hubungi</Text>
           </View>
         </View>
@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginLeft: 20,
     justifyContent: 'center',
+    marginVertical: 10,
   },
   contentSheet: {
     borderWidth: 1,
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     height: BaseSize.halfHeight,
   },
-  textCP: {color: 'blue', marginLeft: 5},
+  textCP: {color: 'blue', marginLeft: 5, fontSize: 18},
   buttonClose: {justifyContent: 'center', alignItems: 'center'},
   viewListed: {flex: 1},
   contentList: {

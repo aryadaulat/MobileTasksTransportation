@@ -50,7 +50,7 @@ const HeaderFilter = (props: Props) => {
               placeholder="Cari"
               value={props.search}
               onChangeText={item => props.onSearch(item)}
-              placeholderTextColor={'white'}
+              placeholderTextColor={'black'}
               style={styles.textinput}
             />
           </View>
@@ -143,6 +143,6 @@ const styles = StyleSheet.create({
   iconChevron: {alignItems: 'center', justifyContent: 'center'},
   boxHeader: {flexDirection: 'row'},
   textinput: {
-    color: 'white',
+    color: 'black',
   },
 });

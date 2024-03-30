@@ -73,7 +73,14 @@ function HomeTabs() {
           tabBarLabel: 'Peta',
         }}
       />
-      <Tab.Screen name="Folder" component={FolderHome} />
+      <Tab.Screen
+        name="Folder"
+        component={FolderHome}
+        options={{
+          headerShown: false,
+          tabBarLabel: 'Folder',
+        }}
+      />
     </Tab.Navigator>
   );
 }
